@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.photo img {
+    width: 200px;
+}
+
+.left-side {
+    background: #2c3e50; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.forh2 {
+    font-size: 2rem;
+    margin: 2.2rem 0 0.6rem 0;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #3498db; 
+}
+
+.forh3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-top: 1.2rem;
+}
+
+.icons {
+    background: #2c3e50;
+    display: flex;
+    justify-content:center;
+    padding: 0.8rem 0;
+}
+
+.icons li { 
+    background: #3498db;
+    color: #ffffff; 
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.icons li:hover {
+    background: #c2afad; 
+    color: #ffffff;
+}
+
+.right-side {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5rem;
+    text-align: center;
+}
+
+.right-side h1 {
+    font-size: 3rem;
+    color: #333; 
+}
+
+.right-side p {
+    font-weight: 300;
+    padding: 0.9rem;
+    opacity: 0.8;
+    color: #555; 
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-bottom: 45px;
+    font-size: 18px;
+}
+.icon-nav {
+    background: #2c3e50;
+    display:flex;
+    padding: 0.8rem 0;
+    position: absolute;
+    top: 0;
+}
+
+.icon-nav li {
+    background: #3498db;
+    color: #ffffff; 
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.icon-nav li:hover {
+    background: #c2afad; 
+    color: #ffffff;
+}
+
+
+.button a{
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button a:hover {
+    background-color: #c2afad;
+}

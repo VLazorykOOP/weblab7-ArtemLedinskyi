@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/about.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us page</title>
+</head>
+<body>
+    <div class="navigations">
+        <ul class="icons">
+            <li><a name="Info about me" href="index.html"><i class="fa-solid fa-arrow-right fa-rotate-180"></i></a></li>
+            <li><a name ="Me" href="index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="form.html"><i class="fa-regular fa-user"></i></a></li>
+            <li><a name="Menu" href="menu.html"><i class="fa-solid fa-map"></i></a></li>
+            <li><a name="Object" href="object.html"><i class="fa-solid fa-arrow-right"></i></a></li>
+        </ul>
+    </div>
+    <div class="heading">
+        <h1 onclick="Handle(this)">Про нас</h1>
+        
+        <div ondragstart="fordrag(this)" draggable="true">
+            <p>"Здоров'я Відкрито" - це не просто аптека, це місце, де серця зустрічаються з дбайливістю, де знання про здоров'я перетворюється на дії та де спільнота росте разом з кожним клієнтом.</p>
+        </div>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="drugstore.jpg" onmouseup="pharmacy(this)">
+            </div>
+            <div class="about-content"> 
+                <h2 ondblclick="dbleclick(this)">Здоров'я Відкрито</h2>
+                <dl>
+                    <dt> Уявіть собі невелике містечко під назвою Сантафорд, де жителі завжди відомі своєю піклуваною про здоров'ям спільнотою.</dt>
+                    <dd>
+                        <ul>
+                            <li>Це місто розташоване серед мальовничих гір та лісів, і тут завжди цінили здоров'я та добробут кожного жителя.</li>
+                            <li>У 1990-х роках молода фармацевтка на ім'я Лілія повернулася в Сантафорд після завершення фармацевтичного навчання в великому місті.</li>
+                            <li>Вона завжди мріяла відкрити власну аптеку та забезпечити містечко необхідними медичними засобами та радою здоров'я.</li>
+                            <li>Лілія відкрила аптеку з назвою "Здоров'я Відкрито", яка стала справжнім центром здоров'я та добробуту для містечка.</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <ul>
+                    <li>Лілія надала дуже важливий акцент на освіту та консультації для своїх клієнтів, допомагаючи їм розуміти, як доглядати за своїм здоров'ям та застосовувати ліки безпечно.</li>
+                    <li>З часом "Здоров'я Відкрито" стала не просто аптекою, а місцем, де містяни завжди можуть звернутися за порадою та підтримкою.</li>
+                    <li>Лілія організовує безкоштовні лекції про здоров'я, сприяє створенню фітнес-груп та проводить різноманітні акції для підвищення свідомості про здоровий спосіб життя.</li>
+                    <li>За роки роботи "Здоров'я Відкрито" стала не просто місцем для придбання медикаментів, а справжнім символом здоров'я та спільноти в Сантафорді.</li>
+                    <li>Аптека Лілії стала важливою частиною життя міста, а її допомога та натхнення допомогли багатьом людям піклуватися про своє здоров'я та покращити своє життя.</li>
+                </ul>
+            </div>
+        </section>
+        <br>
+        <br>
+        <form>
+            <input type="text" placeholder="Введіть ваш текст" id="inputText">
+            <br><br>
+            <button type="button" onclick="searchNumbers()">Пошук інформації</button>
+        </form>
+        <div id="result"></div>
+
+        <form>
+            <textarea id="output" cols="20" rows="5"></textarea>
+            <br>
+            <br>
+            <button type="button" onclick="runTask()">Run Task</button>
+        </form>
+        <br>
+        <br>
+        <svg width="600" height="600">    
+            <line x1="100" y1="300" x2="450" y2="300" stroke="black" stroke-width="2" />
+            <line x1="100" y1="0" x2="100" y2="450" stroke="black" stroke-width="2" /> 
+            <text x="90" y="310" fill="black">0</text>
+            <text x="450" y="310" fill="black">Х</text>
+            <text x="90" y="20" fill="black">У</text>  
+            <text x="90" y="245" fill="black">1</text>
+            <text x="90" y="180" fill="black">2</text>
+            <text x="90" y="115" fill="black">3</text>
+            <text x="160" y="320" fill="black">1</text>
+            <text x="220" y="320" fill="black">2</text>
+            <text x="280" y="320" fill="black">3</text>
+            <text x="340" y="320" fill="black">4</text>
+            <text x="400" y="320" fill="black">5</text> 
+            <text x="85" y="375" fill="black">-1</text>
+            <text x="85" y="440" fill="black">-2</text>
+            <rect x="100" y="180" width="50" height="50">
+                <animate attributeName="fill" values="green;red;blue;green" dur="4s" repeatCount="indefinite" />
+            </rect>
+            <rect x="230" y="111" width="100" height="57"  fill="grey">
+                <animateTransform attributeName="transform" type="rotate" from="0 280 140" to="360 280 140" dur="4s" repeatCount="indefinite"/>
+            </rect>
+            <rect x="410" y="180" width="50" height="50"  fill="blue" />
+            <circle cx="215" cy="233" r="65"  fill="yellow" />
+            <circle cx="345" cy="233" r="65"  fill="purple" />
+            <rect x="100" y="363" width="50" height="50"  fill="dark" />
+            <circle cx="215" cy="365" r="65"  fill="pink" >
+                <animateTransform attributeName="transform" type="scale" values="1;0;1" begin="0s" dur="3s" repeatCount="indefinite" />
+            </circle>
+            <rect x="279" y="363" width="50" height="50"  fill="orange" />
+            <rect x="330" y="302" width="60" height="60"  fill="red" />
+            <rect x="390" y="363" width="50" height="50"  fill="brown" />
+        </svg>
+    </div>
+</body>
+</html>
